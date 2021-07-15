@@ -7,48 +7,96 @@ export default function Home() {
         <title>Kevin's Diary</title>
       </Head>
 
-      <main>
-        <div className="header">
-          <div className="title">Kevin's Diary</div>
+      <header>
+        <div className="header-title">
+          <img className="logo" src="logo.png"></img>
+          <div className="title-content">Kevin's Diary</div>
         </div>
-      </main>
+        <div className="header-links">
+          <a href="/">Diary</a>
+          <a href="/about">About</a>
+        </div>
+      </header>
+
+      <main></main>
 
       <footer>
-        <div className="footer">2021 © crumbledwall</div>
+        <div className="footer">2021 © Kevin</div>
       </footer>
 
       <style jsx>{`
         .container {
           min-height: 100vh;
-          padding: 0 0.5rem;
+          padding: 0;
           display: flex;
           flex-direction: column;
           justify-content: center;
           align-items: center;
+          background: #0d0d0d;
+        }
+
+        header {
+          background: #1c1c1e;
+          width: 100%;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 4rem;
+        }
+
+        .header-title {
+          display: flex;
+          align-items: center;
+          max-width: 750px;
+          width: 100%;
+          font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+          font-style: normal;
+          font-weight: 600;
+          color: inherit;
+          text-rendering: optimizeLegibility;
         }
 
         main {
-          padding: 5rem 0;
           flex: 1;
           display: flex;
           flex-direction: column;
-          justify-content: center;
           align-items: center;
         }
 
         footer {
           width: 100%;
           height: 100px;
-          border-top: 1px solid #eaeaea;
           display: flex;
           justify-content: center;
           align-items: center;
         }
 
-        .title {
+        .title-content {
           margin: 0;
           line-height: 1.15;
-          font-size: 4rem;
+          font-size: 2rem;
+          color: #fff;
+        }
+
+        .logo {
+          width: 4rem;
+        }
+
+        .header-links a {
+          text-decoration: none;
+          color: #fff;
+          margin-right: 1.5rem;
+          line-height: 1.15;
+          font-size: 1.5rem;
+          transition: all 0.3s ease;
+        }
+
+        .header-links a:hover {
+          color: #822828;
+        }
+
+        .footer {
+          color: #fff;
         }
 
         .card {
@@ -90,6 +138,7 @@ export default function Home() {
           font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
             Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
+          background: #0d0d0d;
         }
 
         * {
