@@ -30,10 +30,19 @@ header {
 }
 
 .main {
+  margin-top: 3rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-loading {
+  margin-top: 3rem;
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
+  color: #888;
 }
 
 .about {
@@ -64,6 +73,60 @@ header {
   margin-top: 4rem;
   white-space: pre-wrap;
   color: #fff;
+}
+
+.diary-item {
+  padding: 0rem 2rem 2rem;
+  position: relative;
+  border-left: 3px solid #888;
+  color: #fff;
+}
+
+.diary-item::before {
+  content: attr(date-is);
+  position: absolute;
+  left: 1rem;
+  font-weight: bold;
+  top: 1rem;
+  display: block;
+  font-family: sans-serif;
+  font-weight: 700;
+  font-size: 0.785rem;
+}
+
+.diary-item::after {
+  width: 10px;
+  height: 10px;
+  display: block;
+  top: 0;
+  position: absolute;
+  left: -9.7px;
+  border-radius: 10px;
+  content: "";
+  border: 3px solid #eee;
+  background: #000;
+}
+
+.diary-item:last-child {
+  border-image: linear-gradient(to bottom, #888 0%, #0000 100%) 1 100%;
+}
+
+.diary-content {
+  margin-top: 1rem;
+  width: 700px;
+  line-height: 2rem;
+  white-space: pre-wrap;
+}
+
+.diary-title {
+  width: 700px;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 1rem;
+  color: inherit;
+  margin-top: 1rem;
+  white-space: pre-wrap;
 }
 
 footer {
