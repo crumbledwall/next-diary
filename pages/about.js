@@ -7,6 +7,7 @@ const About = () => {
   return (
     <div className="container">
       <Head>
+        <link rel="shortcut icon" href="logo.png"></link>
         <title>About</title>
       </Head>
       <Header />

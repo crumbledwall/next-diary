@@ -7,6 +7,7 @@ const Home = () => {
   return (
     <div className="container">
       <Head>
+        <link rel="shortcut icon" href="logo.png"></link>
         <title>Kevin&apos;s Diary</title>
       </Head>
       <Header />
