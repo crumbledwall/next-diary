@@ -1,19 +1,19 @@
 import Head from 'next/head'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Main from '@/components/Diary'
+import AboutCard from '@/components/About'
 
-const Home = () => {
+const About = () => {
   return (
     <div className="container">
       <Head>
-        <title>Kevin&apos;s Diary</title>
+        <title>About</title>
       </Head>
       <Header />
-      <Main />
+      <AboutCard />
       <Footer />
     </div>
   )
 }
 
-export default Home
+export default About

@@ -36,6 +36,36 @@ header {
   align-items: center;
 }
 
+.about {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-content {
+  margin-top: 2rem;
+  white-space: pre-wrap;
+  color: #fff;
+  line-height: 2rem;
+}
+
+.about-loading {
+  color: #888;
+  margin: 2rem auto;
+}
+
+.about-title {
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2rem;
+  color: inherit;
+  margin-top: 4rem;
+  white-space: pre-wrap;
+  color: #fff;
+}
+
 footer {
   width: 100%;
   height: 100px;
@@ -52,7 +82,7 @@ footer {
 }
 
 .logo {
-  width: 4rem;
+  width: 4.5rem;
 }
 
 .header-links a {
@@ -69,7 +99,7 @@ footer {
 }
 
 .footer {
-  color: #fff;
+  color: #888;
 }
 
 .card {
