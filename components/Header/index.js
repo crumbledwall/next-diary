@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 const Header = () => {
   return (
     <header>
@@ -6,8 +8,12 @@ const Header = () => {
         <div className="title-content">Kevin&apos;s Diary</div>
       </div>
       <div className="header-links">
-        <a href="/">DIARY</a>
-        <a href="/about">ABOUT</a>
+        <Link href="/">
+          <a>DIARY</a>
+        </Link>
+        <Link href="/about">
+          <a>ABOUT</a>
+        </Link>
       </div>
     </header>
   )
