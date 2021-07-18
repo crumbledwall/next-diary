@@ -1,5 +1,5 @@
 const DIARY = {
-  baseUrl: 'https://api.kev1n.top',
+  baseUrl: 'https://cdn-six-mauve.vercel.app',
   username: 'crumbledwall',
   repo: 'next-diary'
 }
