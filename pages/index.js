@@ -1,4 +1,4 @@
-import Head from 'next/head'
+import Head from '@/components/Head'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
 import Main from '@/components/Diary'
@@ -6,10 +6,7 @@ import Main from '@/components/Diary'
 const Home = () => {
   return (
     <div className="container">
-      <Head>
-        <link rel="shortcut icon" href="logo.png"></link>
-        <title>Kevin&apos;s Diary</title>
-      </Head>
+      <Head PageName="Kevin&apos;s Diary" />
       <Header />
       <Main />
       <Footer />

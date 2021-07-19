@@ -15,7 +15,7 @@ const Diary = () => {
   return (
     <div className="about">
       <div className="about-title">About</div>
-      <div className="about-content">{data[0].body}</div>
+      <div className="about-content about-test">{data[0].body}</div>
     </div>
   )
 }
