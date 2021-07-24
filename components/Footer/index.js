@@ -1,7 +1,13 @@
+import DIARY from '@/diary.config'
+
 const Footer = () => {
+  const getYear = () => {
+    return new Date().getFullYear()
+  }
+
   return (
     <footer>
-      <div className="footer">2021 © Kevin&apos;s Diary</div>
+      <div className="footer">{ getYear() } © { DIARY.siteName }</div>
     </footer>
   )
 }
