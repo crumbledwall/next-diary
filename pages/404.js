@@ -1,18 +1,17 @@
 import Head from '@/components/Head'
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
-import Main from '@/components/Diary'
-import DIARY from '@/diary.config'
+import NotFound from '@/components/NotFound'
 
-const Home = () => {
+const NotFoundPage = () => {
   return (
     <div className="container">
-      <Head PageName={ DIARY.siteName } />
+      <Head PageName="Page Not Found" />
       <Header />
-      <Main page={1} />
+      <NotFound />
       <Footer />
     </div>
   )
 }
 
-export default Home
+export default NotFoundPage
