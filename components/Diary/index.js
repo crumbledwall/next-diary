@@ -3,7 +3,7 @@ import request from '@/utils/request'
 import Item from './item'
 
 const Diary = () => {
-  const { data, isLoading } = request(`${DIARY.baseUrl}/repos/${DIARY.username}/${DIARY.repo}/issues?creator=${DIARY.username}&labels=diary`)
+  const { data, isLoading } = request(`${DIARY.baseUrl}/search/issues?q=+repo:${DIARY.username}/${DIARY.repo}+author:${DIARY.username}+label:diary&per_page=5&page=1`)
 
   if (isLoading) {
     return (
@@ -11,9 +11,9 @@ const Diary = () => {
     )
   }
   return (
-    <div className="main">{data.map((value) => {
-      // eslint-disable-next-line react/jsx-key
+    <div className="main">{data.items.map((value) => {
       return <Item
+        key={value.number}
         title={value.title}
         content={value.body}
       />
