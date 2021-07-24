@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import { useRef } from 'react'
+import DIARY from '@/diary.config'
 
 const Header = () => {
   const links = useRef()
@@ -14,7 +15,7 @@ const Header = () => {
       <div className="header-navbar">
         <div className="header-title">
           <img className="logo" src="logo.png"></img>
-          <div className="title-content">Kevin&apos;s Diary</div>
+          <div className="title-content">{ DIARY.siteName }</div>
           <div className="header-menu-btn" onClick={changeNavState}>
             <img src="menu.svg"></img>
           </div>
