@@ -160,14 +160,14 @@ header {
 .diary-content {
   transition: all 0.3s ease;
   margin-top: 1rem;
-  max-width: 700px;
+  max-width: 600px;
   line-height: 2rem;
   white-space: pre-wrap;
 }
 
 .diary-title {
   transition: all 0.3s ease;
-  max-width: 700px;
+  max-width: 600px;
   font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
   font-style: normal;
   font-weight: 600;
