@@ -28,12 +28,12 @@ const Diary = ({ page }) => {
       <div className="pagination">
         { page > 1
           ? <div className="prev-btn"><Link href={`/page/${parseInt(page) - 1}`}>
-            <a>← 上一页</a>
+            <a>◀ 上一页</a>
           </Link></div>
           : ''}
         { data.total_count > DIARY.perPage * page
           ? <div className="next-btn"><Link href={`/page/${parseInt(page) + 1}`}>
-            <a>下一页 →</a>
+            <a>下一页 ▶</a>
           </Link></div>
           : ''}
       </div>

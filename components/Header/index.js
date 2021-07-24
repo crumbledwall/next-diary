@@ -17,7 +17,7 @@ const Header = () => {
           <img className="logo" src="/logo.png"></img>
           <div className="title-content">{ DIARY.siteName }</div>
           <div className="header-menu-btn" onClick={changeNavState}>
-            <img src="menu.svg"></img>
+            <img src="/menu.svg"></img>
           </div>
         </div>
         <div className="header-links" ref={links}>
