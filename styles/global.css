@@ -199,8 +199,29 @@ header {
   font-weight: 600;
   font-size: 1.3rem;
   color: inherit;
-  margin-top: 1rem;
   white-space: pre-wrap;
+}
+
+.diaries {
+  margin-top: 1rem;
+}
+
+.next-btn {
+  float: right;
+}
+
+.prev-btn {
+  float: left;
+}
+
+.pagination a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+}
+
+.pagination {
+  margin-top: 2rem;
 }
 
 footer {

@@ -3,8 +3,8 @@ const DIARY = {
   username: 'crumbledwall',
   repo: 'next-diary',
   link: 'https://diary.harmless.blue/',
-  siteName: 'Kevin\'s Diary'
-
+  siteName: 'Kevin\'s Diary',
+  perPage: 5
 }
 
 module.exports = DIARY
