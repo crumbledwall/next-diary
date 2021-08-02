@@ -2,7 +2,7 @@ import DIARY from '@/diary.config'
 import request from '@/utils/request'
 
 const Diary = () => {
-  const { data, isLoading } = request(`${DIARY.baseUrl}/repos/${DIARY.username}/${DIARY.repo}/issues?creator=${DIARY.username}&labels=about`)
+  const { data, isLoading } = request(`${DIARY.baseUrl}/search/issues?q=+repo:${DIARY.username}/${DIARY.repo}+author:${DIARY.username}+label:about`)
 
   if (isLoading) {
     return (
@@ -15,7 +15,7 @@ const Diary = () => {
   return (
     <div className="about">
       <div className="about-title">About</div>
-      <div className="about-content about-test">{data[0].body}</div>
+      <div className="about-content about-test">{data.items[0].body}</div>
     </div>
   )
 }
